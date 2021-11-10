@@ -1,8 +1,8 @@
 //Student Details
 
 import java.util.*;
-class Student {
-public static void main(String[] args) {
+class Details {
+	
  String name;
  String usn;
  int[] credits= new int[10];
@@ -46,11 +46,18 @@ void display()
 	for(i=0; i<n; i++)
 	{
 		System.out.println("CREDITS: " + credits[i]);
-		System.out.println("CREDITS: " + marks[i]);
+		System.out.println("MARKS: " + marks[i]);
 	}
 }
+}
+class Student {
+public static void main(String[] args) {
 
+	Details stud1 = new Details();
+	stud1.input();
+	stud1.display();
 }
 }	
+
 
 
